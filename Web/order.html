@@ -2,16 +2,16 @@
 <html>
 <head>
 <meta charset="utf-8">
-<!-- –¬ Bootstrap ∫À–ƒ CSS Œƒº˛ -->
+<!-- ÔøΩÔøΩ Bootstrap ÔøΩÔøΩÔøΩÔøΩ CSS ÔøΩƒºÔøΩ -->
 <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
  
-<!-- ø…—°µƒBootstrap÷˜Ã‚Œƒº˛£®“ª∞„≤ª π”√£© -->
+<!-- ÔøΩÔøΩ—°ÔøΩÔøΩBootstrapÔøΩÔøΩÔøΩÔøΩÔøΩƒºÔøΩÔøΩÔøΩ“ªÔøΩ„≤ª πÔøΩ√£ÔøΩ -->
 <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap-theme.min.css"></script>
  
-<!-- jQueryŒƒº˛°£ŒÒ±ÿ‘⁄bootstrap.min.js ÷Æ«∞“˝»Î -->
+<!-- jQueryÔøΩƒºÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩbootstrap.min.js ÷Æ«∞ÔøΩÔøΩÔøΩÔøΩ -->
 <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
  
-<!-- ◊Ó–¬µƒ Bootstrap ∫À–ƒ JavaScript Œƒº˛ -->
+<!-- ÔøΩÔøΩÔøΩ¬µÔøΩ Bootstrap ÔøΩÔøΩÔøΩÔøΩ JavaScript ÔøΩƒºÔøΩ -->
 <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <title></title>
 <script>
@@ -108,35 +108,33 @@ function addOrder(){
 				<thead>
 					<tr>
 						<th>
-							±‡∫≈
+							‰∫ßÂìÅÂêç
 						</th>
 						<th>
-							≤˙∆∑
+							ÁßçÁ±ª
 						</th>
 						<th>
-							º€∏Ò
-						</th>
-						<th>
-							
+							  ‰ª∑Ê†º
 						</th>
 					</tr>
 				</thead>
 				<tbody>
+				<%foreach var item = ${result}%>
 					<tr>
 						<td>
-							1
+							${result.name}
 						</td>
 						<td>
-							TB - Monthly
+							${result.category}$
 						</td>
 						<td>
-							01/04/2012
+							${result.price}
 						</td>
 						<td>
 							<button type="button" onclick="addOrder()"><img src="public/icon/ok.ico" alt=""></button>
 						</td>
 					</tr>
-					
+					<%/foreach%>
 				</tbody>
 			</table>
 		</div>

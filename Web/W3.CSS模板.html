@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://www.w3schools.com/w3css/tryw3css_templates_pizza.htm# -->
+<html class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}</style><link type="text/css" rel="stylesheet" href="./W3.CSS模板_files/css"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><title>W3.CSS模板</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./W3.CSS模板_files/w3.css">
+<link rel="stylesheet" href="./W3.CSS模板_files/css(1)">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/w3images/pizza.jpg");
+    min-height: 90%;
+}
+</style>
+<script type="text/javascript" charset="UTF-8" src="./W3.CSS模板_files/common.js" style=""></script><script type="text/javascript" charset="UTF-8" src="./W3.CSS模板_files/map.js"></script><script type="text/javascript" charset="UTF-8" src="./W3.CSS模板_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./W3.CSS模板_files/marker.js"></script><style type="text/css">.gm-style {
+        font: 400 11px Roboto, Arial, sans-serif;
+        text-decoration: none;
+      }
+      .gm-style img { max-width: none; }</style><script type="text/javascript" charset="UTF-8" src="./W3.CSS模板_files/onion.js"></script><script type="text/javascript" charset="UTF-8" src="./W3.CSS模板_files/stats.js"></script><script type="text/javascript" charset="UTF-8" src="./W3.CSS模板_files/controls.js"></script><link type="text/css" rel="stylesheet" charset="UTF-8" href="./W3.CSS模板_files/translateelement.css"></head><body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="./W3.CSS模板_files/W3.CSS模板.html" class="w3-bar-item w3-button"><font><font class="">HOME </font></font></a>
+    <a href="https://www.w3schools.com/w3css/tryw3css_templates_pizza.htm#menu" class="w3-bar-item w3-button"><font><font class="">菜单</font></font></a>
+    <a href="https://www.w3schools.com/w3css/tryw3css_templates_pizza.htm#about" class="w3-bar-item w3-button"><font><font class="">关于</font></font></a>
+    <a href="https://www.w3schools.com/w3css/tryw3css_templates_pizza.htm#googleMap" class="w3-bar-item w3-button"><font><font class="">联系</font></font></a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge"><font><font>营业时间为上午10点至晚上12点</font></font></span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px"><font><font>薄</font></font><br><font><font>CRUST PIZZA</font></font></span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b><font><font>薄</font></font><br><font><font>CRUST PIZZA</font></font></b></span>
+    <p><a href="https://www.w3schools.com/w3css/tryw3css_templates_pizza.htm#menu" class="w3-button w3-xxlarge w3-black"><font><font>让我看看菜单</font></font></a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px"><font><font class="">菜单</font></font></h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, &#39;Pizza&#39;);" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red"><font><font>比萨</font></font></div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, &#39;Pasta&#39;);">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red"><font><font class="">沙拉</font></font></div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, &#39;Starter&#39;);">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red w3-red"><font><font class="">起动机</font></font></div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white" style="display: none;">
+      <h1><b><font><font>玛格丽特</font></font></b> <span class="w3-right w3-tag w3-dark-grey w3-round"><font><font>$ 12.50</font></font></span></h1>
+      <p class="w3-text-grey"><font><font>新鲜的西红柿，新鲜的莫扎里拉，新鲜的罗勒</font></font></p>
+      <hr>
+   
+      <h1><b><font><font>Formaggio </font></font></b> <span class="w3-right w3-tag w3-dark-grey w3-round"><font><font>$ 15.50</font></font></span></h1>
+      <p class="w3-text-grey"><font><font>四份奶酪（莫扎里拉，巴马干酪，pecorino，jarlsberg）</font></font></p>
+      <hr>
+      
+      <h1><b><font><font>鸡</font></font></b> <span class="w3-right w3-tag w3-dark-grey w3-round"><font><font>$ 17.00</font></font></span></h1>
+      <p class="w3-text-grey"><font><font>新鲜的西红柿，奶酪，鸡肉，洋葱</font></font></p>
+      <hr>
+
+      <h1><b><font><font>菠萝点</font></font></b> <span class="w3-right w3-tag w3-dark-grey w3-round"><font><font>$ 16.50</font></font></span></h1>
+      <p class="w3-text-grey"><font><font>新鲜的西红柿，莫扎里拉，新鲜的菠萝，培根，新鲜的罗勒</font></font></p>
+      <hr>
+
+      <h1><b><font><font>肉镇</font></font></b> <span class="w3-tag w3-red w3-round"><font><font>热！</font></font></span><span class="w3-right w3-tag w3-dark-grey w3-round"><font><font>$ 20.00</font></font></span></h1>
+      <p class="w3-text-grey"><font><font>新鲜的西红柿，莫扎里拉，热辣椒，热香肠，牛肉，鸡肉</font></font></p>
+      <hr>
+
+      <h1><b><font><font>帕尔马</font></font></b> <span class="w3-tag w3-grey w3-round"><font><font>新</font></font></span><span class="w3-right w3-tag w3-dark-grey w3-round"><font><font>$ 21.50</font></font></span></h1>
+      <p class="w3-text-grey"><font><font>新鲜的西红柿，莫扎里拉，派玛，培根，新鲜的芝麻菜</font></font></p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white" style="display: none;">
+      <h1><b><font><font>烤宽面条</font></font></b> <span class="w3-tag w3-grey w3-round"><font><font>受欢迎</font></font></span> <span class="w3-right w3-tag w3-dark-grey w3-round"><font><font>$ 13.50</font></font></span></h1>
+      <p class="w3-text-grey"><font><font>特制酱，莫扎里拉，巴马干酪，碎牛肉</font></font></p>
+      <hr>
+   
+      <h1><b><font><font>馄饨</font></font></b> <span class="w3-right w3-tag w3-dark-grey w3-round"><font><font>$ 14.50</font></font></span></h1>
+      <p class="w3-text-grey"><font><font>馄饨充满奶酪</font></font></p>
+      <hr>
+      
+      <h1><b><font><font>意粉Classica </font></font></b> <span class="w3-right w3-tag w3-dark-grey w3-round"><font><font>$ 11.00</font></font></span></h1>
+      <p class="w3-text-grey"><font><font>新鲜的西红柿，洋葱，碎牛肉</font></font></p>
+      <hr>
+
+      <h1><b><font><font>海鲜面食</font></font></b> <span class="w3-right w3-tag w3-dark-grey w3-round"><font><font>$ 25.50</font></font></span></h1>
+      <p class="w3-text-grey"><font><font>三文鱼，虾，龙虾，大蒜</font></font></p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white" style="display: block;">
+      <h1><b><font><font>今日汤</font></font></b> <span class="w3-tag w3-grey w3-round"><font><font>季节</font></font></span><span class="w3-right w3-tag w3-dark-grey w3-round"><font><font>$ 5.50</font></font></span></h1>
+      <p class="w3-text-grey"><font><font>问服务员</font></font></p>
+      <hr>
+   
+      <h1><b><font><font>Bruschetta </font></font></b> <span class="w3-right w3-tag w3-dark-grey w3-round"><font><font>$ 8.50</font></font></span></h1>
+      <p class="w3-text-grey"><font><font>面包用香蒜酱，西红柿，洋葱，大蒜</font></font></p>
+      <hr>
+      
+      <h1><b><font><font>大蒜面包</font></font></b> <span class="w3-right w3-tag w3-dark-grey w3-round"><font><font>$ 9.50</font></font></span></h1>
+      <p class="w3-text-grey"><font><font>烤ciabatta，大蒜黄油，洋葱</font></font></p>
+      <hr>
+      
+      <h1><b><font><font>Tomozzarella </font></font></b> <span class="w3-right w3-tag w3-dark-grey w3-round"><font><font>$ 10.50</font></font></span></h1>
+      <p class="w3-text-grey"><font><font>西红柿和莫扎里拉</font></font></p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px"><font><font>关于</font></font></h1>
+    <p><font><font>比萨餐厅由意大利人先生在lorem ipsum dolor sit amet，consectetur adipiscing elit，sed do eiusmod时间incididunt ut labore et dolore magna aliqua创建在blabla。</font><font>Ut im im。。。。。。。。。。。。。。。。。。。。。。。。</font></font></p>
+    <p><strong><font><font>大厨？</font></font></strong><font><font>意大利人自己</font></font><img src="./W3.CSS模板_files/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="厨师"></p>
+    <p><font><font>我们为我们的内部感到自豪。</font></font></p>
+    <img src="./W3.CSS模板_files/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="餐厅">
+    <h1><b><font><font>营业时间</font></font></b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p><font><font>星期一和星期二关闭</font></font></p>
+        <p><font><font>星期三10.00  -  24.00</font></font></p>
+        <p><font><font>星期四上午10:00至24:00</font></font></p>
+      </div>
+      <div class="w3-col s6">
+        <p><font><font>周五10:00  -  12:00</font></font></p>
+        <p><font><font>星期六10:00  -  23:00</font></font></p>
+        <p><font><font>周日休息</font></font></p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Contact (with google maps) -->
+<div id="googleMap" class="w3-grayscale-max" style="width: 100%; height: 400px; position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div style="z-index: 1; position: absolute; top: 0px; left: 0px; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; position: absolute; left: 427px; top: 105px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 683px; top: 105px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 683px; top: -151px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 427px; top: -151px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 427px; top: 361px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 683px; top: 361px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 171px; top: 105px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 939px; top: 105px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 171px; top: 361px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 939px; top: -151px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 939px; top: 361px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 171px; top: -151px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1195px; top: 105px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -85px; top: 105px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -85px; top: 361px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1195px; top: -151px;"></div><div style="width: 256px; height: 256px; position: absolute; left: -85px; top: -151px;"></div><div style="width: 256px; height: 256px; position: absolute; left: 1195px; top: 361px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 427px; top: 105px;"><canvas draggable="false" height="256" width="256" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 683px; top: 105px;"><canvas draggable="false" height="256" width="256" style="-webkit-user-select: none; position: absolute; left: 0px; top: 0px; height: 256px; width: 256px;"></canvas></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 683px; top: -151px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 427px; top: -151px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 427px; top: 361px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 683px; top: 361px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 171px; top: 105px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 939px; top: 105px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 171px; top: 361px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 939px; top: -151px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 939px; top: 361px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 171px; top: -151px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1195px; top: 105px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -85px; top: 105px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -85px; top: 361px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1195px; top: -151px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -85px; top: -151px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 1195px; top: 361px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div aria-hidden="true" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: inherit;"><div style="position: absolute; left: -85px; top: 361px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1195px; top: 105px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(1)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 171px; top: 361px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(2)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 171px; top: 105px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(3)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 683px; top: -151px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(4)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1195px; top: 361px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(5)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 683px; top: 105px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(6)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -85px; top: -151px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(7)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 427px; top: -151px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(8)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 427px; top: 361px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(9)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 427px; top: 105px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(10)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 683px; top: 361px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(11)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 939px; top: 361px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(12)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 939px; top: -151px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(13)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 939px; top: 105px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(14)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 1195px; top: -151px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(15)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -85px; top: 105px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(16)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 171px; top: -151px; transition: opacity 200ms ease-out;"><img src="./W3.CSS模板_files/vt(17)" draggable="false" alt="" style="width: 256px; height: 256px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"><div style="z-index: 1; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"></div></div><div style="z-index: 4; position: absolute; top: 0px; left: 0px; width: 100%; transform-origin: 0px 0px 0px; transform: matrix(1, 0, 0, 1, 0, 0);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div><iframe frameborder="0" style="z-index: -1; border: 0px none; position: absolute; height: 100%; width: 100%; padding: 0px; margin: 0px; left: 0px; top: 0px;"></iframe></div><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" href="https://maps.google.com/maps?ll=41.878114,-87.629798&z=12&t=m&hl=zh-CN&gl=US&mapclient=apiv3" title="点击以在Google地图上查看此区域" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img src="./W3.CSS模板_files/google4.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 256px; height: 148px; position: absolute; left: 525px; top: 110px; background-color: white;"><div style="padding: 0px 0px 10px; font-size: 16px;"><font><font>地图数据</font></font></div><div style="font-size: 13px;"><font><font>地图数据©2017 GS（2011）6020 Google</font></font></div><div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;"><img src="./W3.CSS模板_files/mapcnt6.png" draggable="false" style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 144px; bottom: 0px; width: 221px;"><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer; display: none;"><font><font>地图数据</font></font></a><span><font><font>地图数据©2017 GS（2011）6020 Google</font></font></span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);"><font><font>地图数据©2017 GS（2011）6020 Google</font></font></div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; -webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 84px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/zh-CN_US/help/terms_maps.html" target="_blank" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);"><font><font>使用条款</font></font></a></div></div><div style="cursor: pointer; width: 25px; height: 25px; overflow: hidden; display: none; margin: 10px 14px; position: absolute; top: 0px; right: 0px;"><img src="./W3.CSS模板_files/sv9.png" draggable="false" class="gm-fullscreen-control" style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px;"></div><div draggable="false" class="gm-style-cc" style="-webkit-user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_new" title="向谷歌报告道路地图或图像中的错误" href="https://www.google.com/maps/@41.878114,-87.629798,12z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;"><font><font>报告地图错误</font></font></a></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="28" controlheight="93" style="margin: 10px; -webkit-user-select: none; position: absolute; bottom: 107px; right: 28px;"><div class="gmnoprint" controlwidth="28" controlheight="55" style="position: absolute; left: 0px; top: 38px;"><div draggable="false" style="-webkit-user-select: none; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; width: 28px; height: 55px; background-color: rgb(255, 255, 255);"><div title="放大" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="./W3.CSS模板_files/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: 0px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div><div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; top: 0px; background-color: rgb(230, 230, 230);"></div><div title="缩小" style="position: relative; width: 28px; height: 27px; left: 0px; top: 0px;"><div style="overflow: hidden; position: absolute; width: 15px; height: 15px; left: 7px; top: 6px;"><img src="./W3.CSS模板_files/tmapctrl.png" draggable="false" style="position: absolute; left: 0px; top: -15px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;"></div></div></div></div><div class="gm-svpc" controlwidth="28" controlheight="28" style="box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur) 8 8, default; position: absolute; left: 0px; top: 0px; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: 1px;"></div><div style="position: absolute; left: 1px; top: 1px;"><div aria-label="街景小人控件" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px;"><img src="./W3.CSS模板_files/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -26px; width: 215px; height: 835px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="街景小人位于地图上面" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="./W3.CSS模板_files/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -52px; width: 215px; height: 835px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div aria-label="街景小人控件" style="width: 26px; height: 26px; overflow: hidden; position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="./W3.CSS模板_files/cb_scout5.png" draggable="false" style="position: absolute; left: -147px; top: -78px; width: 215px; height: 835px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div class="gmnoprint" controlwidth="28" controlheight="0" style="display: none; position: absolute;"><div title="将地图旋转90度" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; cursor: pointer; display: none; background-color: rgb(255, 255, 255);"><img src="./W3.CSS模板_files/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div class="gm-tilt" style="width: 28px; height: 28px; overflow: hidden; position: absolute; border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; top: 0px; cursor: pointer; background-color: rgb(255, 255, 255);"><img src="./W3.CSS模板_files/tmapctrl4.png" draggable="false" style="position: absolute; left: -141px; top: -13px; width: 170px; height: 54px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div><div class="gmnoprint" style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; left: 0px; top: 0px;"><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="显示街道地图" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; min-width: 24px; font-weight: 500; background-color: rgb(255, 255, 255); background-clip: padding-box;"><font><font>地图</font></font></div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; left: 0px; top: 30px; text-align: left; display: none; background-color: white;"><div draggable="false" title="显示带地形的街道地图" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img src="./W3.CSS模板_files/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;"><font><font>地形</font></font></label></div></div></div><div class="gm-style-mtc" style="float: left;"><div draggable="false" title="显示卫星图像" style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; -webkit-background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; border-left-width: 0px; min-width: 48px; background-color: rgb(255, 255, 255); background-clip: padding-box;"><font><font>卫星图像</font></font></div><div style="z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px; position: absolute; right: 0px; top: 30px; text-align: left; display: none; background-color: white;"><div draggable="false" title="显示带有街道名称的图像" style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; -webkit-user-select: none; font-size: 11px; padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap; background-color: rgb(255, 255, 255);"><span role="checkbox" style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle; background-color: rgb(255, 255, 255);"><div style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img src="./W3.CSS模板_files/imgs8.png" draggable="false" style="position: absolute; left: -52px; top: -44px; -webkit-user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label style="vertical-align: middle; cursor: pointer;"><font><font>地名</font></font></label></div></div></div></div></div></div></div>
+
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px"><font><font>联系</font></font></h1>
+    <p><font><font>在某个地方找到我们，或致电05050515-122330</font></font></p>
+    <p><span class="w3-tag"><font><font>仅供参考！</font></font></span><font><font>我们为任何大小的活动提供全方位服务的餐饮服务。</font><font>我们了解您的需求，我们将迎合这些食物，满足他们所有的最大标准，包括外观和品味。</font></font></p>
+    <p class="w3-xxlarge"><strong><font><font>保留</font></font></strong><font><font>一张桌子，要求今天的特别或只是给我们一个消息：</font></font></p>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required="" name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required="" name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required="" name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required="" name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit"><font><font>发信息</font></font></button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p><font><font>由</font><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green"><font>w3.css</font></a><font>提供支持</font></font><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green"><font></font></a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="./W3.CSS模板_files/js"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+--><div id="goog-gt-tt" class="goog-tooltip skiptranslate" dir="ltr" style="visibility: hidden; left: 57px; top: 51px; display: none;"><div style="padding: 8px;"><div><div class="logo"><img src="./W3.CSS模板_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text">HOMEMENUABOUTCONTACT</div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none; opacity: 0;"></div></div>
+
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
