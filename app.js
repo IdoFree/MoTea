@@ -4,7 +4,7 @@ var fs = require('fs');
 var url = require('url');
 var handler = require('./db/dbHandler');
 var goodsDao= require("./db/goodsDao");
-var render = require("./engine/ido");
+var ido2 = require("./engine/ido2");
 handler.openConnection();
 
 
@@ -28,50 +28,13 @@ process.on('exit', exitHandler.bind(null,{cleanup:true}));
 process.on('SIGINT', exitHandler.bind(null, {exit:true}));
 
 //catches uncaught exceptions
-process.on('uncaughtException', exitHandler.bind(null, {exit:true}));
+process.on('uncaughtException', exitHandler.bind(null, {exit:false}));
 
-// create server
-http.createServer( function (request, response) {  
-   // parse request params
-   var pathname = url.parse(request.url).pathname;
-   
-   // output file name
-   console.log("Request for " + pathname + " received.");
-   
-   // read file from file system
-   fs.readFile(pathname.substr(1), "utf-8",function (err, data) {
-      if (err) {
-         console.log(err);
-         // HTTP status code : 404 : NOT FOUND
-         // Content Type: text/plain
-         response.writeHead(404, {'Content-Type': 'text/html'});
-      }else{	         
-         // HTTP status code: 200 : OK
-         // Content Type: text/plain
-         response.writeHead(200, {'Content-Type': 'text/html'});
+app.get("/",function(req,rsp.send();){
+	rsp.send("home page");
+});
 
-
-         // response data
-         goodsDao.queryGoods(function(err,result){
-            if(err){
-               console.log('[SELECT ERROR] - ',err.message);
-               return;
-            }
-            console.log('--------------------------SELECT----------------------------');
-            console.log(result);
-            console.log('------------------------------------------------------------\n\n');
-   //         render.render("",{});
-            var dataString = data.toString();
-
-            response.write(dataString.replace(/\{\{name\}\}/g,result[0].name));
-            //  send response data
-            response.end();
-         });
-
-
-      }
-   });
-}).listen(8081);
-
-
-console.log('Server running at http://127.0.0.1:8081/');
+var app = ido2();
+app.listen(8080,function(){
+	console.log('Server running at http://127.0.0.1:8081/');
+});
