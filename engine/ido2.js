@@ -5,6 +5,7 @@
 var fs = require("fs");
 var http = require('http');
 var url = require('url');
+var renderEng = require('ido');
 
 //<%foreach var item = ${result}%>
 var foreach_patt = /<%foreach\s+var\s+item\s*=\s*\$\{([a-zA-Z]+)\}%>([\s\S]*)<%\/foreach%>/g;
@@ -56,7 +57,7 @@ Ido.prototype.listen = function(port,callback){
 
                 response.render = function(fpath,options ){
                     if(options){
-
+						renderEng.render(response,fpath,options);
                     }else{
                         handleStaticFile(fpath,response);
 
